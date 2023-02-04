@@ -10,11 +10,11 @@ import Catalog from './components/Catalog.vue'
       <Catalog />
       
         <nav class="nav">
-            <RouterLink to="/" class="link-rout mx-3">Главная</RouterLink>
-            <RouterLink to="/authors" class="link-rout mx-3">Список авторов</RouterLink>
-            <RouterLink to="/books" class="link-rout mx-3">Список Книг</RouterLink>
-            <RouterLink to="/form-auth" class="link-rout mx-3">Добавить автора</RouterLink>
-            <RouterLink to="/form-books" class="link-rout mx-3">Добавить книгу</RouterLink>
+            <RouterLink to="/" active-class="active" class="link-rout mx-3">Главная</RouterLink>
+            <RouterLink to="/authors" active-class="active" class="link-rout mx-3">Список авторов</RouterLink>
+            <RouterLink to="/books" active-class="active" class="link-rout mx-3">Список Книг</RouterLink>
+            <RouterLink to="/form-auth" active-class="active" class="link-rout mx-3">Добавить автора</RouterLink>
+            <RouterLink to="/form-books" active-class="active" class="link-rout mx-3">Добавить книгу</RouterLink>
          </nav>
 
       
@@ -32,5 +32,9 @@ import Catalog from './components/Catalog.vue'
   color: rgb(99, 218, 218);
   font-size: 20px;
   font-weight: bold;
+}
+.active {
+  font-weight: 700;
+  color: blueviolet;
 }
 </style>
